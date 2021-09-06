@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MarketController">
+   <children>
+      <AnchorPane fx:id="_sidebar" layoutX="-22.0" prefHeight="504.0" prefWidth="189.0" style="-fx-background-color: #ff7f50;">
+         <children>
+            <Button fx:id="_accountBtn" layoutX="14.0" layoutY="117.0" mnemonicParsing="false" onAction="#OnAccountBtnPressed" style="-fx-background-color: #ff7f50;" text="Account">
+               <font>
+                  <Font name="Segoe Print Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../static/img/profil_picture.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="157.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../static/img/profile-icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="_reservationBtn" layoutX="14.0" layoutY="192.0" mnemonicParsing="false" onAction="#OnReservationBtnPressed" style="-fx-background-color: #ff7f50;" text="Reservations">
+               <font>
+                  <Font name="Segoe Print Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="160.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../static/img/car-icon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="24.0" layoutY="267.0" mnemonicParsing="false" style="-fx-background-color: #ff7f50;" text="Invoices">
+               <font>
+                  <Font name="Segoe Print Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="157.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../static/img/invoice-icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="_invoiceBtn" layoutX="17.0" layoutY="267.0" mnemonicParsing="false" onAction="#OnInvoiceBtnPressed" style="-fx-background-color: #ff7f50;" text="Invoices">
+               <font>
+                  <Font name="Segoe Print Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="_logoutBtn" layoutX="17.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnLogoutBtnPressed" style="-fx-background-color: #ff7f50;" text="Log out">
+               <font>
+                  <Font name="Segoe Print Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="160.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../static/img/logout-icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="57.0" fitWidth="37.0" layoutX="728.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/img/hamburger_icon..png" />
+         </image>
+      </ImageView>
+      <Button fx:id="_sidebarToggleBtn" layoutX="724.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnSidebarTogglePressed" opacity="0.0" prefHeight="37.0" prefWidth="47.0" />
+      <ScrollPane layoutX="178.0" layoutY="104.0" prefHeight="400.0" prefWidth="601.0" vmax="2.0">
+         <content>
+            <WebView fx:id="_webView" prefHeight="400.0" prefWidth="599.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="729.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/img/reload-icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="_reloadBtn" layoutX="723.0" layoutY="60.0" mnemonicParsing="false" onAction="#OnReloaded" opacity="0.0" prefHeight="37.0" prefWidth="47.0" />
+      <TextField fx:id="_carIdTextField" layoutX="287.0" layoutY="66.0" promptText="Car ID" />
+      <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="201.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/img/booking-icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="_bookingBtn" layoutX="199.0" layoutY="60.0" mnemonicParsing="false" onAction="#OnBooked" opacity="0.0" prefHeight="37.0" prefWidth="47.0" />
+   </children>
+</AnchorPane>

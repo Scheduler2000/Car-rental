@@ -1,0 +1,5 @@
+Account(#id, first_name, last_name, email, password, type) # the type determines whether the account is an employee or a customer
+Car(#id, model, brand, rental_price, thumbnail) # MAYBE add quantity here ?  thumbnail -> base64 (BLOB) or maybe filepath (to see) 
+Booking(#id, car_id, customer_id, pick_up, return, duration) | car_id && customer_id => Foreign Key
+Invoice(#id, account_id, booking_id) | account_id && booking_id => Foreign Key 
+GiftCode(#id, model, brand, percentage, end) | end -> datetime 

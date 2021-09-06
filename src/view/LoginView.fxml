@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/img/login_user.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="426.0" layoutY="206.0" mnemonicParsing="false" onAction="#OnLoggedIn" prefHeight="29.0" prefWidth="73.0" text="Login" textFill="#da0000" />
+      <TextField fx:id="_emailTextField" layoutX="387.0" layoutY="77.0" promptText="email" />
+      <PasswordField fx:id="_passwordTextField" layoutX="387.0" layoutY="123.0" promptText="password" />
+      <Label layoutX="424.0" layoutY="161.0" text="Forgot Password ?" textFill="#000000a4" />
+      <Label layoutX="387.0" layoutY="267.0" text="Not a member ?" textFill="#000000a4" />
+      <Hyperlink fx:id="_signupBtn" layoutX="482.0" layoutY="264.0" onAction="#OnSignup" text="Signup now" />
+      <Hyperlink fx:id="_forgotPasswordBtn" layoutX="522.0" layoutY="159.0" onAction="#OnForgotPasswordBtnPressed" text="Click Here" />
+   </children>
+</AnchorPane>
